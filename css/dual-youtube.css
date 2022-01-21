@@ -1,0 +1,20 @@
+/* Automatic YouTube Player Plugin
+------------------------------------------- */
+
+.ayg-player-title {
+     padding-bottom: var(--content-spacing) !important;
+}
+
+.ayg-thumbnail-title {
+     line-height: 1.5rem;
+}
+
+.ayg-btn {
+     color: var(--buttonTextInitialColor) !important;
+     background: var(--buttonInitialColor) !important;
+}
+
+.ayg-btn:hover {
+     color: var(--buttonTextHoverColor) !important;
+     background: var(--buttonHoverColor) !important;
+}
