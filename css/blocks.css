@@ -1,0 +1,213 @@
+/* Root
+------------------------------------------- */
+
+@media (min-width: 1000px) {
+     :root {
+          --container-width-base: calc(100vw - var(--wide-offset));
+          --content-spacing: 36px;
+     }
+}
+
+@media (min-width: 690px) and (max-width: 999.98px) {
+     :root {
+          --content-spacing: 24px;
+     }
+}
+
+@media (max-width: 689.98px) {
+     :root {
+          --content-spacing: 24px;
+     }
+}
+
+/* Typography
+------------------------------------------- */
+
+.entry-content h1,
+.entry-content h1:last-child,
+.entry-content h2,
+.entry-content h2:last-child,
+.entry-content h3,
+.entry-content h3:last-child,
+.entry-content h4,
+.entry-content h4:last-child,
+.entry-content h5,
+.entry-content h5:last-child,
+.entry-content h6,
+.entry-content h6:last-child {
+     margin-top: 0;
+     margin-bottom: 1rem;
+}
+
+.entry-content .underline span {
+     white-space: pre;
+}
+
+/* Buttons
+------------------------------------------- */
+
+.wp-block-buttons > .wp-block-button,
+.wp-block-buttons > .wp-block-button:last-child {
+     margin-bottom: 0;
+}
+
+@media (max-width: 689.98px) {
+     .wp-block-buttons > .wp-block-button {
+          margin-bottom: 1em;
+     }
+}
+
+/* Header Menu
+----------------------------------------------- */
+
+[class*="header-menu"] {
+     height: auto;
+}
+
+nav[class*="menu"] li.current-menu-item > a {
+     pointer-events: none;
+}
+
+nav[class*="menu"] li:not(.current-menu-item) > a:after,
+nav[class*="menu"] li:not(.current-menu-item):hover > a:after {
+     background-color: var(--linkHoverColor);
+}
+
+/* Mobile Menu - Offcanvas Panel
+----------------------------------------------- */
+
+.ct-panel-actions {
+     height: var(--header-height);
+     padding-top: 0 !important;
+}
+
+[data-header*='sticky:shrink'] .ct-panel-actions {
+     height: calc((var(--sticky-shrink) / 100) * var(--header-height));
+}
+
+.mobile-menu,
+.mobile-menu .ct-menu-link {
+     width: auto;
+}
+
+.mobile-menu li {
+     align-items: flex-start;
+}
+
+.mobile-menu .ct-sub-menu-parent {
+     column-gap: 0;
+}
+
+/* Core Blocks - Containers
+----------------------------------------------- */
+
+.ct-container-fluid {
+     width: var(--container-width-base);
+}
+
+/* Align Full */
+article > .entry-content > .alignfull:not(.stk-block-hero.stk-block-background):not(.stk-block-columns.stk-block-background) {
+     max-width: var(--container-width-base);
+}
+
+/* Align Wide */
+article > .entry-content > .alignwide {
+     max-width: var(--container-max-width);
+}
+
+/* Align Full/Wide (Inner Full) */
+article > .entry-content > .alignfull > .alignfull,
+article > .entry-content > .alignwide > .alignfull {
+     width: var(--block-width);
+     max-width: var(--container-width-base);
+}
+
+/* Align Full/Wide (Inner Wide) */
+article > .entry-content > .alignfull > .alignwide,
+article > .entry-content > .alignwide > .alignwide {
+     width: var(--block-width);
+     max-width: var(--container-max-width);
+}
+
+/* Core Cover - Parallax
+----------------------------------------------- */
+
+.wp-block-cover-image.has-parallax,
+.wp-block-cover.has-parallax {
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+/* Core Blocks - Columns
+----------------------------------------------- */
+
+@media (max-width: 999.98px) {
+     .wp-block-columns {
+          flex-wrap: wrap !important;
+     }
+
+     .wp-block-columns .wp-block-column:not(:last-child) {
+          margin-bottom: var(--content-spacing);
+     }
+
+     .wp-block-columns .wp-block-column:not(:only-child) {
+          flex-basis: 100% !important;
+     }
+
+     .wp-block-columns .wp-block-column:nth-child(2n) {
+          margin-left: 0 !important;
+     }
+}
+
+/* Core Blocks - Reverse Columns
+------------------------------------------- */
+
+@media (max-width: 689.98px) {
+     .wp-block-columns.reverse {
+          flex-direction: column-reverse !important;
+     }
+
+     .wp-block-columns.reverse .wp-block-column:not(:last-child) {
+          margin-bottom: 0;
+     }
+
+     .wp-block-columns.reverse .wp-block-column:last-child {
+          margin-bottom: var(--content-spacing);
+     }
+}
+
+/* Core Blocks - Content Block
+----------------------------------------------- */
+
+@media (min-width: 1000px) {
+     .page .entry-content > *:not(:last-child) {
+          margin-bottom: calc(var(--content-spacing) * 3);
+     }
+}
+
+@media (max-width: 999.98px) {
+     .page .entry-content > *:not(:last-child) {
+          margin-bottom: calc(var(--content-spacing) * 2);
+     }
+}
+
+@media (max-width: 689.98px) {
+     .page .entry-content > *:not(:last-child) {
+          margin-bottom: calc(var(--content-spacing) * 2);
+     }
+}
+
+/* Social Icons
+ ----------------------------------------------- */
+
+.wp-block-social-links {
+     column-gap: 15px;
+}
+
+.wp-block-social-links .wp-social-link a {
+     padding: 0.5em;
+}
+
+.wp-block-social-link:hover {
+     background-color: var(--paletteColor2) !important;
+}
