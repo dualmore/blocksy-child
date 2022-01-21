@@ -1,0 +1,76 @@
+/* Basic & Submit Buttons
+ ------------------------------------------- */
+
+[type="submit"],
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.has-background {
+     border-color: transparent !important;
+}
+
+[type="submit"]:hover,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.has-background:hover {
+     border-color: transparent !important;
+     filter: brightness(.9) contrast(1.2);
+}
+
+/* Ghost Buttons
+ ------------------------------------------- */
+
+/* border matches text color */
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-1-color {
+     border-color: var(--paletteColor1) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-2-color {
+     border-color: var(--paletteColor2) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-3-color {
+     border-color: var(--paletteColor3) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-4-color {
+     border-color: var(--paletteColor4) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-5-color {
+     border-color: var(--paletteColor5) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-6-color {
+     border-color: var(--paletteColor6) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-7-color {
+     border-color: var(--paletteColor7) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-8-color {
+     border-color: var(--paletteColor8) !important;
+}
+
+/* background hover color */
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-background {
+     background-color: transparent !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+     color: var(--buttonTextHoverColor) !important;
+     border-color: transparent !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-1-background-color:hover {
+     background-color: var(--paletteColor1) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-2-background-color:hover {
+     background-color: var(--paletteColor2) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-3-background-color:hover {
+     background-color: var(--paletteColor3) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-palette-color-4-background-color:hover {
+     background-color: var(--paletteColor4) !important;
+}
