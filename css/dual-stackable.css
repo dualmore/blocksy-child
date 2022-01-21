@@ -1,0 +1,210 @@
+/* Root
+------------------------------------------- */
+:root {
+     --stk-block-background-padding: calc(var(--content-spacing) * 3) 0;
+     --stk-block-margin-bottom: var(--content-spacing);
+}
+
+.page .entry-content > .stk-block-background:not(.stk--no-padding):not(:last-child) {
+     margin-bottom: calc(var(--content-spacing) * 3) !important;
+}
+
+@media (max-width: 999.98px) {
+     :root {
+          --stk-block-background-padding: calc(var(--content-spacing) * 2) 0;
+     }
+
+     .page .entry-content > .stk-block-background:not(.stk--no-padding):not(:last-child) {
+          margin-bottom: calc(var(--content-spacing) * 2) !important;
+     }
+}
+
+.stk--has-background-overlay {
+     overflow: visible !important;
+}
+
+/* Stackable - Typography
+------------------------------------------- */
+
+.stk-block,
+.stk-block [class*=__text],
+.stk-block h1,
+.stk-block h2,
+.stk-block h3,
+.stk-block h4,
+.stk-block h5,
+.stk-block h6,
+.stk-block li,
+.stk-block p,
+.stk-block-heading__bottom-line,
+.stk-block-heading__top-line,
+.stk-block-posts__item-hide,
+.stk-container,
+.stk-container-padding,
+.stk-img-wrapper,
+.stk-img-wrapper img {
+     transition: none !important;
+}
+
+:is(.ugb-highlight, .stk-highlight) {
+     box-decoration-break: clone;
+     -webkit-box-decoration-break: clone;
+}
+
+/* Stackable - v2 Buttons
+------------------------------------------- */
+
+.ugb-button {
+     --s-primary-color: var(--buttonInitialColor);
+}
+
+.ugb-button:hover {
+     --s-primary-color: var(--buttonHoverColor);
+}
+
+.ugb-button--size-tiny {
+     --button-padding: 0.3em 1em;
+}
+
+.ugb-button--size-small {
+     --button-padding: 0.6em 1em;
+}
+
+.ugb-button--size-normal {
+     --button-padding: 1em 1.2em;
+}
+
+.ugb-button--size-medium {
+     --button-padding: 1.2em 1.4em;
+}
+
+.ugb-button.ugb-button--size-large {
+     --button-padding: 1.3em 1.6em;
+}
+
+.ugb-button.ugb-button--size-tiny.ugb-button--design-ghost {
+     padding: calc(0.3em - 2px) calc(1em - 2px) !important;
+}
+
+.ugb-button.ugb-button--size-small.ugb-button--design-ghost {
+     padding: calc(0.6em - 2px) calc(1em - 2px) !important;
+}
+
+.ugb-button.ugb-button--size-normal.ugb-button--design-ghost {
+     padding: calc(1em - 2px) calc(1.4em - 2px) !important;
+}
+
+.ugb-button.ugb-button--size-medium.ugb-button--design-ghost {
+     padding: calc(1.2em - 2px) calc(1.4em - 2px) !important;
+}
+
+.ugb-button.ugb-button--size-large.ugb-button--design-ghost {
+     padding: calc(1.3em - 2px) calc(1.6em - 2px) !important;
+}
+
+.ugb-button.ugb-button--size-normal .ugb-button--inner {
+     font-size: 1em;
+}
+
+.ugb-button.ugb-button--size-medium .ugb-button--inner {
+     font-size: 1.25em;
+}
+
+.ugb-button.ugb-button--size-large .ugb-button--inner {
+     font-size: 1.5em;
+}
+
+.ugb-button:not(.ugb-link-button):not(.ugb-button--design-link) {
+     display: var(--display, inline-flex);
+     font-family: var(--buttonFontFamily, var(--fontFamily));
+     font-size: var(--buttonFontSize);
+     font-weight: var(--buttonFontWeight);
+     font-style: var(--buttonFontStyle);
+     line-height: var(--buttonLineHeight) !important;
+     letter-spacing: var(--buttonLetterSpacing);
+     text-transform: var(--buttonTextTransform);
+     -webkit-text-decoration: var(--buttonTextDecoration);
+     text-decoration: var(--buttonTextDecoration);
+     min-height: var(--buttonMinHeight);
+     padding: var(--button-padding);
+     border-radius: var(--buttonBorderRadius, 3px);
+     transition: all 0.2s ease !important;
+}
+
+/* .ugb-button.ugb-button--design-ghost:not(.ugb-link-button):not(.ugb-button--design-link) {
+     padding: var(--basic-button-padding);
+} */
+
+.ugb-button.ugb-button--design-ghost:not(.ugb-link-button):not(.ugb-button--design-link):hover,
+.ugb-button.ugb-button--design-ghost:not(.ugb-link-button):not(.ugb-button--design-link):hover:before {
+     border-radius: var(--buttonBorderRadius, 3px);
+}
+
+/* Stackable - v3 Buttons
+------------------------------------------- */
+
+.stk-button {
+     font-family: var(--buttonFontFamily, var(--fontFamily));
+     font-size: var(--buttonFontSize);
+     font-weight: var(--buttonFontWeight);
+     font-style: var(--buttonFontStyle);
+     line-height: var(--buttonLineHeight);
+     letter-spacing: var(--buttonLetterSpacing);
+     text-transform: var(--buttonTextTransform);
+     -webkit-text-decoration: var(--buttonTextDecoration);
+     text-decoration: var(--buttonTextDecoration);
+     min-height: var(--buttonMinHeight);
+     --stk-button-padding: var(--button-padding);
+     border-radius: var(--buttonBorderRadius, 3px);
+     transition: all 0.2s ease !important;
+}
+
+.stk-button:not(.stk--hover-effect-darken):hover {
+     --stk-button-text-color: var(--buttonTextHoverColor);
+     --stk-button-background-color: var(--buttonHoverColor);
+}
+
+/* Columns
+------------------------------------------- */
+
+.stk-block-columns > .stk-block-content {
+     --stk-column-gap: calc(var(--content-spacing) * 2);
+}
+
+@media (max-width: 689.98px) {
+     .stk-block-columns > .stk-block-content {
+          row-gap: var(--content-spacing);
+     }
+}
+
+/* Stackable - Containers
+----------------------------------------------- */
+
+/* Align Full (Inner Wide) */
+.stk-block .stk-block.alignwide,
+.stk-block:is(.aligncenter, .alignwide, .alignfull) > .stk-content-align.alignwide {
+     width: var(--block-width);
+}
+
+/* Align Full (Inner Default) */
+.stk-block .stk-block.aligncenter,
+.stk-block:is(.aligncenter, .alignwide, .alignfull) > .stk-content-align:not(.alignwide):not(.alignfull) {
+     width: var(--block-width);
+}
+
+/* Stackable - Heroes
+----------------------------------------------- */
+
+@media (max-width: 689.98px) {
+     /* Align Full (Inner All) */
+     article > .entry-content > .stk-block-hero.alignfull > .stk-block-hero__content {
+          max-width: var(--container-width-base);
+     }
+}
+
+/* Accordion
+------------------------------------------- */
+
+/* .stk-block-accordion .stk-block-accordion__content a {
+     color: var(--color);
+} */
