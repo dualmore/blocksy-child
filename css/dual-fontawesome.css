@@ -1,0 +1,9 @@
+/* Font Awesome Admin Fixes */
+
+/* WPForms */
+#wpforms-builder .fa,
+#wpforms-builder .far,
+#wpforms-builder .fas {
+     font-family: FontAwesome !important;
+     font-weight: 400 !important;
+}

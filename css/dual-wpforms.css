@@ -1,0 +1,39 @@
+/* WPForms Custom Styles */
+
+div.wpforms-container-full {
+     width: 100% !important;
+}
+
+.wpforms-container .wpforms-field {
+     padding: 0 0 var(--content-spacing);
+}
+
+.wpforms-container .wpforms-field-select {
+     clear: both !important;
+}
+
+.wpforms-container .wpforms-field-sublabel {
+     margin: 0.5em 0 0;
+}
+
+.wpforms-container .wpforms-submit-container {
+     padding: 10px 0;
+}
+
+@media (max-width: 689.99px) {
+     .wpforms-container .wpforms-mobile-full {
+          width: 100% !important;
+          margin-left: 0 !important;
+          float: none !important;
+     }
+
+     .wpforms-container .wpforms-mobile-full .wpforms-field-row .wpforms-field-row-block {
+          width: 100% !important;
+          margin-left: 0 !important;
+          float: none !important;
+     }
+
+     .wpforms-container .wpforms-mobile-full .wpforms-field-row .wpforms-field-row-block:not(:last-of-type) {
+          padding-bottom: 10px !important;
+     }
+}
