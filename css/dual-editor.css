@@ -1,0 +1,81 @@
+/* Custom Block Editor */
+
+body ::-moz-selection {
+     color: var(--selectionTextColor);
+     background-color: var(--selectionBackgroundColor);
+}
+
+body ::selection {
+     color: var(--selectionTextColor);
+     background-color: var(--selectionBackgroundColor);
+}
+
+/* Buttons
+----------------------------------------------- */
+
+body .editor-styles-wrapper .is-style-outline > .wp-block-button__link,
+body .editor-styles-wrapper .wp-block-button__link.is-style-outline {
+     padding: var(--button-padding);
+}
+
+body .editor-styles-wrapper .button,
+body .editor-styles-wrapper [type="submit"] {
+     font-family: var(--buttonFontFamily, var(--fontFamily));
+     font-size: var(--buttonFontSize);
+     font-weight: var(--buttonFontWeight);
+     font-style: var(--buttonFontStyle);
+     line-height: var(--buttonLineHeight);
+     letter-spacing: var(--buttonLetterSpacing);
+     text-transform: var(--buttonTextTransform);
+     -webkit-text-decoration: var(--buttonTextDecoration);
+     text-decoration: var(--buttonTextDecoration);
+
+     display: var(--display, inline-flex);
+     align-items: center;
+     justify-content: center;
+     min-height: var(--buttonMinHeight);
+     padding: var(--button-padding);
+     border: none;
+     -webkit-appearance: none;
+     appearance: none;
+     cursor: pointer;
+     -webkit-user-select: none;
+     user-select: none;
+     text-align: center;
+     border-radius: var(--buttonBorderRadius, 3px);
+     transition: all 0.2s ease;
+     --has-link-decoration: var(--false);
+
+     position: relative;
+     color: var(--buttonTextInitialColor);
+     border: var(--button-border);
+     background-color: var(--buttonInitialColor);
+}
+
+/* Core Blocks - Containers
+----------------------------------------------- */
+
+/* Align Wide */
+body .editor-styles-wrapper .wp-block[data-align="wide"] {
+     max-width: var(--container-max-width);
+}
+
+/* Align (Inner Full) */
+body .editor-styles-wrapper .wp-block[data-align="full"] .alignfull,
+body .editor-styles-wrapper .wp-block[data-align="wide"] .alignfull {
+     max-width: var(--container-max-width);
+}
+
+/* Align (Inner Wide) */
+body .editor-styles-wrapper .wp-block[data-align="full"] .alignwide,
+body .editor-styles-wrapper .wp-block[data-align="wide"] .alignwide {
+     max-width: var(--wide-block-max-width);
+}
+
+body .editor-styles-wrapper.stk-preview-device-tablet .wp-block[data-align="full"] .alignfull,
+body .editor-styles-wrapper.stk-preview-device-tablet .wp-block[data-align="full"] .alignwide,
+body .editor-styles-wrapper.stk-preview-device-mobile .wp-block[data-align="full"] .alignfull,
+body .editor-styles-wrapper.stk-preview-device-mobile .wp-block[data-align="full"] .alignwide {
+     max-width: 100%;
+     padding: 10px;
+}
