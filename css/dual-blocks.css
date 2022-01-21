@@ -107,7 +107,7 @@ nav[class*="menu"] li:not(.current-menu-item):hover > a:after {
 }
 
 [data-header*='sticky:shrink'] .ct-panel-actions {
-     height: calc((var(--sticky-shrink) / 100) * var(--header-height));
+     height: calc((var(--sticky-shrink, 100) / 100) * var(--header-height));
 }
 
 .mobile-menu,
