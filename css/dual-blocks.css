@@ -57,6 +57,31 @@
      }
 }
 
+/* Links
+ ------------------------------------------- */
+
+[data-link='type-5'] .entry-content a:not(.wp-block-button__link):not(.ugb-button--ghost-to-normal-effect):not(.ugb-button--design-ghost) {
+     color: var(--linkInitialColor);
+     background-size: var(--has-link-decoration, 0% 100%);
+     background-image: var(--has-link-decoration, linear-gradient(var(--linkHoverColor), var(--linkHoverColor)));
+     background-position: var(--has-link-decoration, 0% 100%);
+     background-repeat: var(--has-link-decoration, no-repeat);
+}
+
+[data-link='type-5'] .entry-content a:not(.wp-block-button__link):not(.ugb-button--ghost-to-normal-effect):not(.ugb-button--design-ghost):hover {
+     color: var(--has-link-decoration, var(--color));
+     background-size: var(--has-link-decoration, 100% 100%);
+}
+
+[data-link='type-5'] .entry-content .dark a:not(.wp-block-button__link):not(.ugb-button--ghost-to-normal-effect):not(.ugb-button--design-ghost) {
+     color: var(--color);
+     background-image: var(--has-link-decoration, linear-gradient(var(--color), var(--color)));
+}
+
+[data-link='type-5'] .entry-content .dark a:not(.wp-block-button__link):not(.ugb-button--ghost-to-normal-effect):not(.ugb-button--design-ghost):hover {
+     color: var(--paletteColor8);
+}
+
 /* Header Menu
 ----------------------------------------------- */
 
