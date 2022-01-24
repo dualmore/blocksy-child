@@ -6,7 +6,7 @@
 }
 
 .page .entry-content > .stk-block-background:not(.stk--no-padding):not(:last-child) {
-     margin-bottom: calc(var(--content-spacing) * 3) !important;
+     margin-bottom: calc(var(--content-spacing) * 3);
 }
 
 @media (max-width: 999.98px) {
@@ -15,7 +15,7 @@
      }
 
      .page .entry-content > .stk-block-background:not(.stk--no-padding):not(:last-child) {
-          margin-bottom: calc(var(--content-spacing) * 2) !important;
+          margin-bottom: calc(var(--content-spacing) * 2);
      }
 }
 
