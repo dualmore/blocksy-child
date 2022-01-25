@@ -160,19 +160,6 @@
      --stk-button-background-color: var(--buttonHoverColor);
 }
 
-/* Columns
-------------------------------------------- */
-
-.stk-block-columns > .stk-block-content {
-     --stk-column-gap: calc(var(--content-spacing) * 2);
-}
-
-@media (max-width: 689.98px) {
-     .stk-block-columns > .stk-block-content {
-          row-gap: var(--content-spacing);
-     }
-}
-
 /* Stackable - Containers
 ----------------------------------------------- */
 
@@ -188,17 +175,7 @@
      width: var(--block-width);
 }
 
-/* Stackable - Heroes
------------------------------------------------ */
-
-@media (max-width: 689.98px) {
-     /* Align Full (Inner All) */
-     article > .entry-content > .stk-block-hero.alignfull > .stk-block-hero__content {
-          max-width: var(--container-width-base);
-     }
-}
-
-/* Columns
+/* Stackable - Columns
 ------------------------------------------- */
 
 .stk-block-columns > .stk-block-content {
@@ -209,4 +186,21 @@
      .stk-block-columns > .stk-block-content {
           row-gap: var(--content-spacing);
      }
+}
+
+/* Stackable - Heroes
+----------------------------------------------- */
+
+@media (max-width: 689.98px) {
+     /* Align Full (Inner All) */
+     article > .entry-content > .stk-block-hero.alignfull > .stk-block-hero__content {
+          max-width: var(--container-width-base);
+     }
+}
+
+/* Stackable - Accordions
+------------------------------------------- */
+
+.stk-block-accordion .stk-block-accordion__heading .stk-block-icon-label .stk-block-heading .stk-block-heading__text {
+     margin-bottom: 0;
 }
