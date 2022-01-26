@@ -23,7 +23,7 @@
 /* Typography
 ------------------------------------------- */
 
-.entry-content h1,
+/*.entry-content h1,
 .entry-content h1:last-child,
 .entry-content h2,
 .entry-content h2:last-child,
@@ -37,7 +37,7 @@
 .entry-content h6:last-child {
      margin-top: 0;
      margin-bottom: 1rem;
-}
+}*/
 
 .entry-content .underline span {
      white-space: pre;
