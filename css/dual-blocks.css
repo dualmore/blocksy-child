@@ -85,7 +85,7 @@
 /* Header Menu
 ----------------------------------------------- */
 
-[data-menu*="type-2"] {
+[class*="header-menu"] {
      height: auto;
 }
 
