@@ -182,7 +182,7 @@
      --stk-column-gap: calc(var(--content-spacing) * 2);
 }
 
-@media (max-width: 689.98px) {
+@media (max-width: 999.98px) {
      .stk-block-columns > .stk-block-content {
           row-gap: var(--content-spacing);
      }
