@@ -110,13 +110,13 @@ nav[class*="menu"] li:not(.current-menu-item):hover > a:after {
      height: calc((var(--sticky-shrink, 100) / 100) * var(--header-height));
 }
 
+#offcanvas [data-behaviour*='side'] .mobile-menu li {
+     align-items: flex-start;
+}
+
 .mobile-menu,
 .mobile-menu .ct-menu-link {
      width: auto;
-}
-
-.mobile-menu li {
-     align-items: flex-start;
 }
 
 .mobile-menu .ct-sub-menu-parent {
