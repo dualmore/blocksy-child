@@ -137,7 +137,7 @@ article > .entry-content > .alignfull:not(.stk-block-hero.stk-block-background):
 
 /* Align Wide */
 article > .entry-content > .alignwide {
-     max-width: var(--container-max-width);
+     max-width: var(--normal-container-max-width);
 }
 
 /* Align Full/Wide (Inner Full) */
@@ -151,7 +151,7 @@ article > .entry-content > .alignwide > .alignfull {
 article > .entry-content > .alignfull > .alignwide,
 article > .entry-content > .alignwide > .alignwide {
      width: var(--block-width);
-     max-width: var(--container-max-width);
+     max-width: var(--normal-container-max-width);
 }
 
 /* Core Cover - Parallax
